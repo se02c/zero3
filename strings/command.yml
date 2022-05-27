@@ -28,7 +28,7 @@ DELETEPLAYLIST_COMMAND : ["deleteplaylist", "حذف القائمه"]
 # Tools
 QUEUE_COMMAND : ["queue","cqueue", "player","المشغل","/المشغل", "cplayer", "playing", "cplaying"]
 SONG_COMMAND : ["song","تنزيل","تحميل","اغنيه","تشغيل","/تنزيل","/تحميل","/اغنيه","/تشغيل", "video"]
-LYRICS_COMMAND : ["lyrics"," كلمات","/كلمات]
+LYRICS_COMMAND : ["lyrics"," كلمات","/كلمات"]
 
 
 # Admin Commands
