@@ -56,7 +56,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],        
         [
             InlineKeyboardButton(
-                text=_["PL_B_3"], url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                text=_["PL_B_3"], url=f"https://t.me/VPllllllbot?startgroup=true",
             ),
         ],
     ]
@@ -106,7 +106,7 @@ def stream_markup(_, videoid, chat_id):
         ],        
         [
             InlineKeyboardButton(
-                text=_["PL_B_3"], url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                text=_["PL_B_3"], url=f"https://t.me/VPllllllbot?startgroup=true",
             ),
         ],
     ]
@@ -121,7 +121,7 @@ def telegram_markup(_, chat_id):
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_3"], url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                text=_["PL_B_3"], url=f"https://t.me/VPllllllbot?startgroup=true",
             ),
         ],
     ]
