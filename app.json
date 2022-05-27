@@ -15,12 +15,12 @@
     "env": {
       "API_ID": {
         "description": "حط هنا الايبي ايدي",
-        "value": "",
+        "value": "10729094",
         "required": true
       },
       "API_HASH": {
         "description": "حط هنا الايبي هاش",
-        "value": "",
+        "value": "038b0b405782d91cbb32f60e917c1c6e",
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
@@ -35,47 +35,47 @@
       },
       "BOT_USERNAME": {
         "description": "حط هنا يوزر البوت بدون @ ينجم .",
-        "value": "",
+        "value": "VPllllllbot",
         "required": true
       },
       "MONGO_DB_URI": {
         "description": "حط هنا كود المونجو .",
-        "value": "",
+        "value": "mongodb+srv://bot_vambir:Al2552001@cluster0.heabj.mongodb.net/vambir_bot?retryWrites=true&w=majority",
         "required": false
       },
       "MUSIC_BOT_NAME": {
         "description": "حط اسم البوت انجلش كابيتال زيي - VAMBIR.",
-        "value": "",
+        "value": "VAMBIR",
         "required": true
       },
       "NAME_BOT": {
         "description": "حط اسم البوت ب العربي زي فمبير .",
-        "value": "",
+        "value": "فمبير",
         "required": true
       },
       "OWNER": {
         "description": "حط هنا يوزر المطور منغير علامه @ .",
-        "value": "",
+        "value": "XxlllllllllllllllllllllllllllxX",
         "required": true
       },
       "OWNER_USER": {
         "description": "حط هنا يوزر المطور بعلامه @ .",
-        "value": "",
+        "value": "@XxlllllllllllllllllllllllllllxX",
         "required": true
       },
       "OWNER_ID": {
         "description": "حط هنا ايدي المطور ينجم .",
-        "value": "",
+        "value": "2093265110",
         "required": true
       },
       "IMG_DEV1": {
         "description": "حط لينك صورة المطور ينجم .",
-        "value": "",
+        "value": "https://telegra.ph/file/e70a5c7bbce858cee91ac.jpg",
         "required": true
       },
       "IMG_BOT1": {
         "description": "حط لينك صورة البوت ينجم .",
-        "value": "",
+        "value": "https://telegra.ph/file/b6d7f12c06eb782447c7e.png",
         "required": true
       },
       "STRING_SESSION": {
@@ -95,7 +95,7 @@
       },
       "LOG_GROUP_ID": {
         "description": "حط ايدي جروب البوتات وارفع البوت والحساب المساعد مشرف الاول .",
-        "value": "",
+        "value": "-1001615880226",
         "required": true
       },
       "START_IMG_URL": {
