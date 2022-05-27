@@ -7,7 +7,6 @@
 #
 # All rights reserved.
 
-from YukkiMusic.plugins.techzbots.database.limitsdb import is_approved
 import os
 import re
 
