@@ -67,7 +67,7 @@ VIDEOMODE_COMMAND : ["/videomode","وضع"]
 
 #Mantenance
 MAINTENANCE_COMMAND : ["/maintenance","اساسي"]
-LOGGER_COMMAND : ["/logger","المدخل]
+LOGGER_COMMAND : ["/logger","المدخل"]
 
 #Heroku
 GETLOG_COMMAND : ["/get_log", "تسجيل"]
