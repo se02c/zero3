@@ -33,6 +33,15 @@
         "value": "",
         "required": true
       },
+        "GIT_TOKEN": {
+
+        "description": "حط هنا توكن بوتك .",
+
+        "value": "",
+
+        "required": true
+
+      },  
       "BOT_USERNAME": {
         "description": "حط هنا يوزر البوت بدون @ ينجم .",
         "value": "VPllllllbot",
