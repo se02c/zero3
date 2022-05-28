@@ -43,8 +43,8 @@ STOP_COMMAND : ["stop", "end", "cstop", "cend", "ايقاف", "انهاء", "ق 
 SKIP_COMMAND : ["skip", "cskip", "تخطي", "ق تخطي", "/skip", "/cskip", "/تخطي", "/ق تخطي"]
 SHUFFLE_COMMAND : ["/shuffle","عشوئي","عشوئي ق", "/cshuffle"]
 LOOP_COMMAND : ["/loop","الدخول","دخول ق", "/cloop"]
-SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
-RESTART_COMMAND : ["restart"]
+SEEK_COMMAND : ["/seek", "/cseek", "/seekback", "/cseekback"]
+RESTART_COMMAND : ["/restart","ترسيت"]
 
 # Sudo Users Commaands
 
@@ -81,12 +81,12 @@ VARS_COMMAND : ["/vars","الفارات", "/config"]
 #Basic Bot Commands
 UPDATE_COMMAND : ["/update", "ترقيه"]
 REBOOT_COMMAND : ["/reboot", "تنصيب"]
-AUTOEND_COMMAND : ["/autoend","تلقائي]
+AUTOEND_COMMAND : ["/autoend","تلقائي"]
 
 #Private Bot 
 AUTHORIZE_COMMAND : ["/authorize","تبنيد"]
 UNAUTHORIZE_COMMAND : ["/unauthorize","سماح"]
-AUTHORIZED_COMMAND : ["/authorized","المتبندين]
+AUTHORIZED_COMMAND : ["/authorized","المتبندين"]
 
 #Block Users Command
 BLOCK_COMMAND : ["/block", "حظر"]
