@@ -43,7 +43,7 @@ STOP_COMMAND : ["stop", "end", "cstop", "cend", "ايقاف", "انهاء", "ق 
 SKIP_COMMAND : ["skip", "cskip", "تخطي", "ق تخطي", "/skip", "/cskip", "/تخطي", "/ق تخطي"]
 SHUFFLE_COMMAND : ["/shuffle","عشوئي","عشوئي ق", "/cshuffle"]
 LOOP_COMMAND : ["/loop","الدخول","دخول ق", "/cloop"]
-SEEK_COMMAND : ["/seek", "/cseek", "/seekback", "/cseekback"]
+SEEK_COMMAND : ["/seek", "/cseek", "/seekback", "/cseekback","العوده"]
 RESTART_COMMAND : ["/restart","ترسيت"]
 
 # Sudo Users Commaands
@@ -54,7 +54,7 @@ DELSUDO_COMMAND : ["/delsudo", "ت م ث", "تنزيل"]
 SUDOUSERS_COMMAND : ["/sudolist", "الادمنيه"]
 
 #Broadcast 
-BROADCAST_COMMAND : ["/broadcast","broadcast", "اذاعه"]
+BROADCAST_COMMAND : ["/broadcast","broadcast", "ذاعه"]
 
 #Blacklist chat
 BLACKLISTCHAT_COMMAND : ["/blacklistchat","حظرالاستخدام"]
