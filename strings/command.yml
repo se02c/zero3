@@ -54,7 +54,7 @@ DELSUDO_COMMAND : ["/delsudo", "ت م ث", "تنزيل"]
 SUDOUSERS_COMMAND : ["/sudolist", "الادمنيه"]
 
 #Broadcast 
-BROADCAST_COMMAND : ["/broadcast","broadcast", "اذاعه"]
+BROADCAST_COMMAND : ["/broadcast","broadcast", "ذيع"]
 
 #Blacklist chat
 BLACKLISTCHAT_COMMAND : ["/blacklistchat","حظرالاستخدام"]
