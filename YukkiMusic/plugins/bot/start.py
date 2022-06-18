@@ -115,7 +115,7 @@ async def start_comm(client, message: Message, _):
                 sender_name = message.from_user.first_name
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    f"{message.from_user.mention} has just started bot to check <code>SUDOLIST</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
+                    f"{message.from_user.mention} ضغط هذا المستخدم استارت في بوتك to check <code>SUDOLIST</code>\n\n**ايدي المستخدم:** {sender_id}\n**اليوزر نيم:** {sender_name}",
                 )
             return
         if name[0:3] == "lyr":
