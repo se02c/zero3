@@ -35,7 +35,7 @@
       },
       "GIT_TOKEN": {
         "description": "حط هنا توكن بوتك .",
-        "value": "",
+        "value": "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",
         "required": true
       },  
       "BOT_USERNAME": {
@@ -80,7 +80,7 @@
       },
       "IMG_BOT1": {
         "description": "حط لينك صورة البوت ينجم .",
-        "value": "https://telegra.ph/file/b6d7f12c06eb782447c7e.png",
+        "value": "https://telegra.ph/file/b3499f8f3f78a379ded26.jpg",
         "required": true
       },
       "STRING_SESSION": {
@@ -105,12 +105,12 @@
       },
       "START_IMG_URL": {
         "description": "Telegraph Image URL For Start Command",
-        "value": "https://telegra.ph/file/b6d7f12c06eb782447c7e.png",
+        "value": "https://telegra.ph/file/b3499f8f3f78a379ded26.jpg",
         "required": true
       },      
       "UPSTREAM_REPO": {
         "description": "سيبها زي مهيا .",
-        "value": "https://github.com/VamBIR/end",
+        "value": "https://github.com/VamBIR/endd",
         "required": true
       },
       "UPSTREAM_BRANCH": {
