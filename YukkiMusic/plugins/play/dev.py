@@ -38,7 +38,7 @@ async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{IMG_DEV1}",
        caption=f"""❲#VAMBIR❳
-🐲━─⊶⛧•𝑽𝑨𝑴𝑩𝑰𝑹•⛧⊷─━🐲
+🐲━━━─⊶⛧•𝑽𝑨𝑴𝑩𝑰𝑹•⛧⊷─━━━🐲
 👨🏼‍💻 يوزر المطور : @{OWNER}""",
         reply_markup=InlineKeyboardMarkup(
             [
