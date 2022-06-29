@@ -37,17 +37,17 @@ OWNER_NAME = getenv("OWNER_NAME")
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{IMG_DEV1}",
-       caption=f"""❲ Developers Bot ❳
-— — — — — — — — —
-𖥔 Dev User : @{OWNER}""",
+       caption=f"""❲#VAMBIR❳
+🐲━─⊶⛧•𝑽𝑨𝑴𝑩𝑰𝑹•⛧⊷─━🐲
+👨🏼‍💻 يوزر المطور : @{OWNER}""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "- Devoleper Bot .", url=f"https://t.me/{OWNER}")
+                        "◍:👮🏼‍♂️ مالك البوت √", url=f"https://t.me/{OWNER}")
                 ],[
                     InlineKeyboardButton(
-                        "اضف البوت الي مجموعتك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                        "اضف البوت الي مجموعتك✅", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
                 ],
             ]
         ),
