@@ -1,9 +1,0 @@
-services:
-- type: Static Sites
-  name: nikolaik/python-nodejs
-  env: docker
-  disk:
-    name: data
-    mountPath: /var/lib/nikolaik/python-nodejs
-    sizeGB: 10
-
