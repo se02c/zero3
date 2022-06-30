@@ -6,5 +6,4 @@ services:
     name: data
     mountPath: /var/lib/nikolaik/python-nodejs
     sizeGB: 10
-Footer
 
