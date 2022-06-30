@@ -1,10 +1,10 @@
 services:
 - type: pserv
-  name: redis
+  name: nikolaik/python-nodejs
   env: docker
   disk:
     name: data
-    mountPath: /var/lib/redis
+    mountPath: /var/lib/nikolaik/python-nodejs
     sizeGB: 10
 Footer
 
