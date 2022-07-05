@@ -19,7 +19,7 @@ import config
 from config import adminlist, chatstats, clean, userstats
 from strings import get_command
 from YukkiMusic import app, userbot
-from YukkiMusic.misc import SUDOERS
+from config.config import OWNER_ID
 from YukkiMusic.utils.database import (get_active_chats,
                                        get_authuser_names, get_client,
                                        get_particular_top,
@@ -67,7 +67,7 @@ async def clean_mode(client, update, users, chats):
     await set_queries(1)
 
 
-@app.on_message(command(BROADCAST_COMMAND) & SUDOERS)
+@app.on_message(command(BROADCAST_COMMAND) & filters.user(OWNER_ID))
 @language
 async def braodcast_message(client, message, _):
     global IS_BROADCASTING
@@ -78,16 +78,16 @@ async def braodcast_message(client, message, _):
         if len(message.command) < 2:
             return await message.reply_text(_["broad_5"])
         query = message.text.split(None, 1)[1]
-        if "-pin" in query:
-            query = query.replace("-pin", "")
-        if "-nobot" in query:
-            query = query.replace("-nobot", "")
-        if "-pinloud" in query:
-            query = query.replace("-pinloud", "")
-        if "-assistant" in query:
-            query = query.replace("-assistant", "")
-        if "-user" in query:
-            query = query.replace("-user", "")
+        if "بالتثبيت" in query:
+            query = query.replace("بالتثبيت", "")
+        if "لابوت" in query:
+            query = query.replace("لابوت", "")
+        if "فوق" in query:
+            query = query.replace("فوق", "")
+        if "بالمساعد" in query:
+            query = query.replace("بالمساعد", "")
+        if "للمستخدمين" in query:
+            query = query.replace("للمستخدمين", "")
         if query == "":
             return await message.reply_text(_["broad_6"])
 
