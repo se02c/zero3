@@ -26,7 +26,8 @@ from pyrogram import filters
 import config
 from strings import get_command
 from YukkiMusic import app
-from YukkiMusic.misc import HAPP, SUDOERS, XCB
+from config.config import OWNER_ID
+from YukkiMusic.misc import HAPP, XCB
 from YukkiMusic.utils.database import (get_active_chats,
                                        remove_active_chat,
                                        remove_active_video_chat)
@@ -49,7 +50,7 @@ async def is_heroku():
     return "heroku" in socket.getfqdn()
 
 
-@app.on_message(command(GETLOG_COMMAND) & SUDOERS)
+@app.on_message(command(GETLOG_COMMAND) & filters.user(OWNER_ID))
 @language
 async def log_(client, message, _):
     try:
@@ -79,7 +80,7 @@ async def log_(client, message, _):
         await message.reply_text(_["heroku_2"])
 
 
-@app.on_message(command(GETVAR_COMMAND) & SUDOERS)
+@app.on_message(command(GETVAR_COMMAND) & filters.user(OWNER_ID))
 @language
 async def varget_(client, message, _):
     usage = _["heroku_3"]
@@ -109,7 +110,7 @@ async def varget_(client, message, _):
             )
 
 
-@app.on_message(command(DELVAR_COMMAND) & SUDOERS)
+@app.on_message(command(DELVAR_COMMAND) & filters.user(OWNER_ID))
 @language
 async def vardel_(client, message, _):
     usage = _["heroku_6"]
@@ -137,7 +138,7 @@ async def vardel_(client, message, _):
             os.system(f"kill -9 {os.getpid()} && bash start")
 
 
-@app.on_message(command(SETVAR_COMMAND) & SUDOERS)
+@app.on_message(command(SETVAR_COMMAND) & filters.user(OWNER_ID))
 @language
 async def set_var(client, message, _):
     usage = _["heroku_8"]
@@ -166,7 +167,7 @@ async def set_var(client, message, _):
         os.system(f"kill -9 {os.getpid()} && bash start")
 
 
-@app.on_message(command(USAGE_COMMAND) & SUDOERS)
+@app.on_message(command(USAGE_COMMAND) & filters.user(OWNER_ID))
 @language
 async def usage_dynos(client, message, _):
     ### Credits CatUserbot
@@ -223,7 +224,7 @@ Total Left: `{hours}`**h**  `{minutes}`**m**  [`{percentage}`**%**]"""
     return await dyno.edit(text)
 
 
-@app.on_message(command(UPDATE_COMMAND) & SUDOERS)
+@app.on_message(command(UPDATE_COMMAND) & filters.user(OWNER_ID))
 @language
 async def update_(client, message, _):
     if await is_heroku():
@@ -323,7 +324,7 @@ async def update_(client, message, _):
         exit()
 
 
-@app.on_message(command(REBOOT_COMMAND) & SUDOERS)
+@app.on_message(command(REBOOT_COMMAND) & filters.user(OWNER_ID))
 async def restart_(_, message):
     response = await message.reply_text("Restarting....")
     served_chats = await get_active_chats()
