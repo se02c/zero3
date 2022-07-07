@@ -1,7 +1,6 @@
 from functools import wraps
 from config.config import MUST_JOIN
-from pyrogram import Client
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
 CAPTION_BTN = InlineKeyboardMarkup(
@@ -9,13 +8,13 @@ CAPTION_BTN = InlineKeyboardMarkup(
 
 def must_join_channel(func):
     @wraps(func)
-    async def sz_message(_, bot: Client, msg: message):
+    async def sz_message(_, message):
         try:
-            await bot.get_chat_member(MUST_JOIN, msg.from_user.id)
-            if MUST_JOIN.isalpha():
+            await message._client.get_chat_member(MUST_JOIN, message.from_user.id)
+            if MUST_JOIN.isalpha():          
                 link = "https://t.me/" + MUST_JOIN
             else:
-                chat_info = await bot.get_chat(MUST_JOIN)
+                chat_info = await message._client.get_chat(MUST_JOIN)
                 link = chat_info.invite_link
         except UserNotParticipant:
             return await message.reply_text(
