@@ -21,7 +21,7 @@ def must_join_channel(func):
             """,
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("اضـغط هنا للأشتـراك بالـقـنـاه✅", url="{link}")]
+                        [InlineKeyboardButton("اضـغط هنا للأشتـراك بالـقـنـاه✅", url="https://t.me/{MUST_JOIN}")]
                     ])
                 )
         return await func(_, message)    
