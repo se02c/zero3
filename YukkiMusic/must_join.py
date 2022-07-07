@@ -6,7 +6,6 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 CAPTION_BTN = InlineKeyboardMarkup([
                         [InlineKeyboardButton("اضـغط هنا للأشتـراك بالـقـنـاه✅", url=link)]
                     ])
-                )
 
 def must_join_channel(func):
     @wraps(func)
