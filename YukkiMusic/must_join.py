@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
 CAPTION_BTN = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("اضـغط هنا للأشتـراك بالـقـنـاه✅", url="https://t.me/{MUST_JOIN}")]])
+            [[InlineKeyboardButton("اضـغط هنا للأشتـراك بالـقـنـاه✅", url=link]])
 
 def must_join_channel(func):
     @wraps(func)
@@ -19,7 +19,7 @@ def must_join_channel(func):
         except UserNotParticipant:
             return await message.reply_text(
             text="""
-🗽يجب ان تشترك في قناة السورس⬇️\n\n [⚙¦ قنــاة الســورس️](https://t.me/{MUST_JOIN})\n 🖥¦حتي تتمكن من استخدامي\n◍ اشترك ثم اضغط « /play والاغنيه» مره اخري√\n\n🌐¦ By ||[ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧](https://t.me/XxlllllllllllllllllllllllllllxX)||
+🗽يجب ان تشترك في قناة السورس⬇️\n\n [**⚙¦ قنــاة ســورس️ الاغــانـي**]({link})\n 🖥¦حتي تتمكن من استخدامي\n◍ اشترك ثم اضغط « /play والاغنيه» مره اخري√\n\n🌐¦ By ||[ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧](https://t.me/XxlllllllllllllllllllllllllllxX)||
             """,
             reply_markup=CAPTION_BTN,
             disable_web_page_preview=True) 
