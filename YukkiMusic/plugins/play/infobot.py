@@ -58,7 +58,7 @@ async def get_chat_info(chat, already=False):
     return [caption, photo_id]
 
 
-@app.on_message(command("ايدي") & ~filters.edited)
+@app.on_message(command("ايدي") & filters.private & ~filters.edited)
 async def info_func(_, message: Message):
     if message.reply_to_message:
         user = message.reply_to_message.from_user.id
@@ -83,7 +83,7 @@ async def info_func(_, message: Message):
     os.remove(photo)
 
 
-@app.on_message(command("معلومات") & ~filters.edited)
+@app.on_message(command("معلومات") & filters.private & ~filters.edited)
 async def chat_info_func(_, message: Message):
     try:
         if len(message.command) > 2:
