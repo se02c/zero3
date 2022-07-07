@@ -16,15 +16,18 @@ def must_join_channel(func):
                 link = chat_info.invite_link
         except UserNotParticipant:
             return await message.reply(
-                    f"🗽يجب ان تشترك في قناة السورس⬇️\n\n [⚙¦ قنــاة ســورس️ الاغــانـي](https://t.me/{MUST_JOIN})\n 🖥¦حتي تتمكن من استخدامي\n◍ اشترك ثم اضغط « /play والاغنيه» مره اخري√\n\n🌐¦ By ||[ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧](https://t.me/XxlllllllllllllllllllllllllllxX)||",
+                    f"🗽يجب ان تشترك في قنـاة البــوت⬇️\n\n[⚙¦ قنــاة ســورس️ الاغــانـي](https://t.me/XxvprxX)\n\n🤖قنـاة الـبـوت @{MUST_JOIN} »\n🖥¦حتي تتمكن من استخدامي\n◍ اشترك ثم اضغط « /play والاغنيه» مره اخري√\n\n🌐¦ By ||[ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧](https://t.me/XxlllllllllllllllllllllllllllxX)||",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("اضـغط هنا للأشتـراك بالـقـنـاه✅", url=f"https://t.me/{MUST_JOIN}"),
+                                InlineKeyboardButton("اضـغط هنا للأشتـراك بقـناة البـوت✅", url=f"https://t.me/{MUST_JOIN}"),
+                            ],
+                            [
+                                InlineKeyboardButton("ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧", url=f"https://t.me/XxlllllllllllllllllllllllllllxX"),
                             ] 
                          ] 
-                      )
-                    ) 
+                      ) 
+                   ) 
         return await func(_, message)    
     return sz_message
