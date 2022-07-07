@@ -3,9 +3,6 @@ from config.config import MUST_JOIN
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
-CAPTION_BTN = InlineKeyboardMarkup([
-                        [InlineKeyboardButton("اضـغط هنا للأشتـراك بالـقـنـاه✅", url=link)]
-                    ])
 
 def must_join_channel(func):
     @wraps(func)
@@ -22,7 +19,10 @@ def must_join_channel(func):
             text="""
 🗽يجب ان تشترك في قناة السورس⬇️\n\n [**⚙¦ قنــاة ســورس️ الاغــانـي**]({link})\n 🖥¦حتي تتمكن من استخدامي\n◍ اشترك ثم اضغط « /play والاغنيه» مره اخري√\n\n🌐¦ By ||[ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧](https://t.me/XxlllllllllllllllllllllllllllxX)||
             """,
-            reply_markup=CAPTION_BTN,
-            disable_web_page_preview=True) 
+            disable_web_page_preview=True,
+                    reply_markup=InlineKeyboardMarkup([
+                        [InlineKeyboardButton("اضـغط هنا للأشتـراك بالـقـنـاه✅", url=link)]
+                    ])
+                )
         return await func(_, message)    
     return sz_message
