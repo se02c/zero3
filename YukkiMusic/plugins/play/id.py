@@ -12,8 +12,8 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 async def vambir(client: Client, message: Message):
     usr = await client.get_users(message.from_user.id)
     name = usr.first_name
-                    await message.reply_text(
-                        text=f"""◂ اسمك ↫ {message.from_user.mention}\n\n◂ معرفك ↫ @{message.from_user.username}\n\n◂ ايديك ↫ `{message.from_user.id}`\n\n◂ ايدي الجروب ↫ `{message.chat.id}`""", 
+    async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
+                    await message.reply_text(       f"""◂ اسمك ↫ {message.from_user.mention}\n\n◂ معرفك ↫ @{message.from_user.username}\n\n◂ ايديك ↫ `{message.from_user.id}`\n\n◂ ايدي الجروب ↫ `{message.chat.id}`""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
