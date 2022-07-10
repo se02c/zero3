@@ -17,6 +17,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from YukkiMusic import app
+from YukkiMusic.misc import SUDOERS
 from config.config import OWNER_ID
 from YukkiMusic.utils import get_readable_time
 from YukkiMusic.utils.database import (add_banned_user,
