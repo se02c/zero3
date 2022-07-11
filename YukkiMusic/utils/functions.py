@@ -16,6 +16,17 @@ from pyrogram.types import Message
 from YukkiMusic import aiohttpsession as aiosession
 from YukkiMusic.utils.http import get, post
 
+async def start_restart_stage(chat_id: int, message_id: int):
+    await restart_stagedb.update_one(
+        {"something": "something"},
+        {
+            "$set": {
+                "chat_id": chat_id,
+                "message_id": message_id,
+            }
+        },
+        upsert=True,
+    )
 async def restart(m: Message):
     if m:
         await start_restart_stage(m.chat.id, m.message_id)
