@@ -94,7 +94,7 @@ async def braodcast_message(client, message, _):
     IS_BROADCASTING = True
 
     # Bot broadcast inside chats
-    if "-nobot" not in message.text:
+    if "لابوت" not in message.text:
         sent = 0
         pin = 0
         chats = []
@@ -108,13 +108,13 @@ async def braodcast_message(client, message, _):
                     if message.reply_to_message
                     else await app.send_message(i, text=query)
                 )
-                if "-pin" in message.text:
+                if "بالتثبيت" in message.text:
                     try:
                         await m.pin(disable_notification=True)
                         pin += 1
                     except Exception:
                         continue
-                elif "-pinloud" in message.text:
+                elif "فوق" in message.text:
                     try:
                         await m.pin(disable_notification=False)
                         pin += 1
@@ -134,7 +134,7 @@ async def braodcast_message(client, message, _):
             pass
 
     # Bot broadcasting to users
-    if "-user" in message.text:
+    if "للمستخدمين" in message.text:
         susr = 0
         served_users = []
         susers = await get_served_users()
@@ -161,7 +161,7 @@ async def braodcast_message(client, message, _):
             pass
 
     # Bot broadcasting by assistant
-    if "-assistant" in message.text:
+    if "بالمساعد" in message.text:
         aw = await message.reply_text(_["broad_2"])
         text = _["broad_3"]
         from YukkiMusic.core.userbot import assistants
