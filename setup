@@ -115,7 +115,6 @@ pprint "\nMONGO DB URI: "; color_reset; read mongo_db
 pprint "\nLOG GROUP ID: "; color_reset; read logger
 pprint "\nPYROGRAM STRING SESSION OF ASSISTANT ACCOUNT: "; color_reset; read string_session
 pprint "\nMUSIC BOT NAME: "; color_reset; read mbt
-pprint "\nGIT_Token:"; color_reset; read git
 pprint "\nSTART_IMG_URL:"; color_reset; read photo
 pprint "\nchannel:"; color_reset; read join
 pprint "\nOWNER_ID:"; color_reset; read ownid
@@ -134,7 +133,6 @@ MONGO_DB_URI = $mongo_db
 LOG_GROUP_ID = $logger
 MUSIC_BOT_NAME = $mbt
 STRING_SESSION = $string_session
-GIT_TOKEN = $git
 START_IMG_URL = $photo
 OWNER_ID = $ownid""" > .env
 clear
