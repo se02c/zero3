@@ -10,27 +10,16 @@ from pyrogram.types import InlineKeyboardButton
 from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from YukkiMusic import app
 from config import BANNED_USERS, MUSIC_BOT_NAME
-
-import re
-import sys
-from os import getenv
-
-from dotenv import load_dotenv
-from pyrogram import filters
-
-load_dotenv()
-
-BOT_USERNAME = getenv("BOT_USERNAME")
-
+from config.config import START_IMG_URL
 
 @app.on_message(
-    command(["سورس مين","سورس","السورس","يا سورس"])
+    command(["بوت"])
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://t.me/XxvprxX",
-        caption=f"""[◍ 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒔𝒐𝒖𝒓𝒄𝒆 𝒗𝒂𝒎𝒃𝒊𝒓 √🖥](https://t.me/XxvprxX)\n\n[◍ 𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 𝒐𝒏 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎 √🌐](https://t.me/XxvprxX)\n\n[◍ 𝒇𝒐𝒍𝒍𝒐𝒘 𝒕𝒉𝒆 𝒃𝒖𝒕𝒕𝒐𝒏𝒔 𝒃𝒆𝒍𝒐𝒘 √🔮](https://t.me/XxvprxX)\n\n||[◍ ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧ √](https://t.me/XxlllllllllllllllllllllllllllxX)||""",
+        photo=f"{START_IMG_URL}",
+        caption=f"◍ [نعم ياقلب بوتك😍](https://t.me/XxvprxX)\n√", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -46,6 +35,4 @@ async def khalid(client: Client, message: Message):
 
             ]
 
-        ),
-
-    )
+        ), 
