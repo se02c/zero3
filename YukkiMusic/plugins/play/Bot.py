@@ -32,7 +32,6 @@ async def khalid(client: Client, message: Message):
                     InlineKeyboardButton(
                         "اضغط لاضافه البوت لمجموعتك✅.", url=f"https://t.me/VPllllllbot?startgroup=true"),
                 ],
-
             ]
-
-        )
+       ),
+    ) 
