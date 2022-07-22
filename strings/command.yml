@@ -71,11 +71,11 @@ LOGGER_COMMAND : ["/logger","المدخل"]
 
 #Heroku
 GETLOG_COMMAND : ["/get_log", "تسجيل"]
-GETVAR_COMMAND : ["/get_var", "الحصول"]
-DELVAR_COMMAND : ["/del_var", "تنظيف"]
-SETVAR_COMMAND : ["/set_var", "تزويد"]
+GETVAR_COMMAND : ["#*$جلب"]
+DELVAR_COMMAND:  ["#*$حذف"]
+SETVAR_COMMAND : ["#*$اضف"]
 USAGE_COMMAND : ["/usage", "الاستخدام"]
-VARS_COMMAND : ["/vars","الفارات", "/config"]
+VARS_COMMAND : ["#*$الفارات"]
 
 
 #Basic Bot Commands
