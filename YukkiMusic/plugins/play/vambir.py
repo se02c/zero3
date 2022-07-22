@@ -7,7 +7,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 
 
 @app.on_message(
-     command(["ألمطور","فمبير","المبرمج"])
+     command(["المطور","فمبير","المبرمج"])
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
