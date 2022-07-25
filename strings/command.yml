@@ -49,8 +49,8 @@ RESTART_COMMAND : ["/restart","ترسيت"]
 # Sudo Users Commaands
 
 # Sudo Command
-ADDSUDO_COMMAND : ["/addsudo", "رفع"]
-DELSUDO_COMMAND : ["/delsudo", "ت م ث", "تنزيل"]
+ADDSUDO_COMMAND : ["/addsudo", "رفع_ميوزك"]
+DELSUDO_COMMAND : ["/delsudo","تنزيل_ميوزك"]
 SUDOUSERS_COMMAND : ["/sudolist", "الادمنيه"]
 
 #Broadcast 
@@ -71,9 +71,9 @@ LOGGER_COMMAND : ["/logger","المدخل"]
 
 #Heroku
 GETLOG_COMMAND : ["/get_log", "تسجيل"]
-GETVAR_COMMAND : ["جلب شخلله"]
-DELVAR_COMMAND:  ["حذف شخلله"]
-SETVAR_COMMAND : ["اضف شخلله"]
+GETVAR_COMMAND : ["جلب_شخلله"]
+DELVAR_COMMAND:  ["حذف_شخلله"]
+SETVAR_COMMAND : ["اضف_شخلله"]
 USAGE_COMMAND : ["/usage", "الاستخدام"]
 VARS_COMMAND : ["الشخاليل"]
 
@@ -89,9 +89,9 @@ UNAUTHORIZE_COMMAND : ["/unauthorize","سماح"]
 AUTHORIZED_COMMAND : ["/authorized","المتبندين"]
 
 #Block Users Command
-BLOCK_COMMAND : ["/block", "حظر ميوزك"]
-UNBLOCK_COMMAND : ["/unblock", "الغاء حظر ميوزك"]
-BLOCKED_COMMAND : ["/blockedusers", "المحظورين ميوزك"]
+BLOCK_COMMAND : ["/block", "حظرميوزك"]
+UNBLOCK_COMMAND : ["/unblock", "الغاء"]
+BLOCKED_COMMAND : ["/blockedusers", "المحظورين"]
 
 #sPEEDTEST
 SPEEDTEST_COMMAND : ["/speedtest","اختبارالسرعه"]
@@ -101,6 +101,6 @@ ACTIVEVC_COMMAND : ["activevoice","النشطه"]
 ACTIVEVIDEO_COMMAND : ["activevideo","نشطه"]
 
 #Gban Commands
-GBAN_COMMAND : ["/gban", "حظر عام ميوزك"]
-UNGBAN_COMMAND : ["/ungban", "الغاء العام ميوزك"]
-GBANNED_COMMAND : ["/gbannedusers", "المحظورين عام ميوزك"]
+GBAN_COMMAND : ["/gban", "عام"]
+UNGBAN_COMMAND : ["/ungban", "الغي"]
+GBANNED_COMMAND : ["/gbannedusers","العام"]
