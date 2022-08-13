@@ -33,11 +33,11 @@ class YukkiBot(Client):
         self.id = get_me.id
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "◍ تم تشغيل البوت علي سورس فمبير √"
+                config.LOG_GROUP_ID, "◍ تم تشغيل البوت علي سورس زيرو √"
             )
         except:
             LOGGER(__name__).error(
-                "Bot has failed to access the log Group. Make sure that you have added your bot to your log channel and promoted as admin!"
+                "◍ فشل البوت في الوصول إلى مجموعة السجل. تأكد من أنك أضفت البوت الخاص بك إلى قناة السجل الخاصة بك وقمت بالترقية كمسؤول! √"
             )
             sys.exit()
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
