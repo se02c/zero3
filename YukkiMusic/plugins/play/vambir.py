@@ -7,7 +7,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 
 
 @app.on_message(
-     command(["المطور","فمبير","المبرمج"])
+     command(["المطور","سيزر","المبرمج"])
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
@@ -18,12 +18,12 @@ async def khalid(client: Client, message: Message):
             [
                 [
                 InlineKeyboardButton(
-                    "🔮𝐒𝐎𝐔𝐑𝐂𝐄 𝐕𝘼𝙈𝘽𝙄𝙍🔮", url=f"https://t.me/XxvprxX"
+                    "• 𝙎𝙊𝙐𝙍𝘾𝙀 𝙕𝙀𝙍𝙊 •⚡️", url=f"https://t.me/abogram"
                 ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧", url=f"https://t.me/XxlllllllllllllllllllllllllllxX"),
+                        "Abdo Asil...🤍", url=f"https://t.me/ttccss"),
                 ],
             ]
         ),

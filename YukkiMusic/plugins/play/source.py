@@ -24,24 +24,24 @@ BOT_USERNAME = getenv("BOT_USERNAME")
 
 
 @app.on_message(
-    command(["سورس مين","سورس","السورس","يا سورس"])
+    command(["زيرو","سورس","السورس","source","يا سورس"])
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://t.me/XxvprxX",
-        caption=f"""[◍ 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒔𝒐𝒖𝒓𝒄𝒆 𝒗𝒂𝒎𝒃𝒊𝒓 √🖥](https://t.me/XxvprxX)\n\n[◍ 𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 𝒐𝒏 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎 √🌐](https://t.me/XxvprxX)\n\n[◍ 𝒇𝒐𝒍𝒍𝒐𝒘 𝒕𝒉𝒆 𝒃𝒖𝒕𝒕𝒐𝒏𝒔 𝒃𝒆𝒍𝒐𝒘 √🔮](https://t.me/XxvprxX)\n\n||[◍ ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧ √](https://t.me/XxlllllllllllllllllllllllllllxX)||""",
+        photo=f"https://t.me/XTIORY",
+        caption=f"""╭──── • ◈ • ────╮\n么 [𝚂𝙾𝚄𝚁𝙲𝙴 𝚉𝙴𝚁𝙾](https://t.me/abogram) 𖠲\n么 [𝙰𝙺 𝚃𝙾 𝙼𝙴](https://t.me/abogram) 𖠲\n么 [Abdo Asil...🤍](https://t.me/ttccss) 𖠲\n╰──── • ◈ • ────╯\⍟ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧", url=f"https://t.me/XxlllllllllllllllllllllllllllxX"), 
+                        "Abdo Asil...🤍", url=f"https://t.me/ttccss"), 
                 ],[
                     InlineKeyboardButton(
-                        "𝗦𝗢𝗨𝗥𝗖𝗘 𝗩𝗔𝗠𝗕𝗜𝗥⚡", url=f"https://t.me/XxvprxX"),
+                        "• 𝙎𝙊𝙐𝙍𝘾𝙀 𝙕𝙀𝙍𝙊 •⚡️", url=f"https://t.me/XTIORY"),
                 ],[
                     InlineKeyboardButton(
-                        "اضغط لاضافه البوت لمجموعتك✅.", url=f"https://t.me/VPllllllbot?startgroup=true"),
+                        "اضغط لاضافه البوت لمجموعتك✅.", url=f"https://t.me/Rep0obot?startgroup=true"),
                 ],
 
             ]
