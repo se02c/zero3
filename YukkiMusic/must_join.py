@@ -16,7 +16,7 @@ def must_join_channel(func):
                 link = chat_info.invite_link
         except UserNotParticipant:
             return await message.reply(
-                    f"🗽يجب ان تشترك في قنـاة البــوت⬇️\n\n[⚙¦ قنــاة ســورس️ الاغــانـي](https://t.me/XxvprxX)\nـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ\n**🤖قنـاة الـبـوت ⬅️** @{MUST_JOIN} »\nـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ\n🖥¦حتي تتمكن من استخدامي\n◍ اشترك ثم اضغط « /play والاغنيه » مره اخري√\n\n🌐¦ By ||[ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧](https://t.me/XxlllllllllllllllllllllllllllxX)||",
+                    f"🗽يجب ان تشترك في قنـاة البــوت⬇️\n\n[⚙¦ قنــاة ســورس️ الاغــانـي](https://t.me/abogram)\nـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ\n**🤖قنـاة الـبـوت ⬅️** @{MUST_JOIN} »\nـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ\n🖥¦حتي تتمكن من استخدامي\n◍ اشترك ثم اضغط « /play والاغنيه » مره اخري√\n\n🌐¦ By ||[Abdo Asil...🤍](https://t.me/ttccss)||",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup(
                         [
@@ -24,7 +24,7 @@ def must_join_channel(func):
                                 InlineKeyboardButton("اضـغط هنا للأشتـراك بقـناة البـوت✅", url=f"https://t.me/{MUST_JOIN}"),
                             ],
                             [
-                                InlineKeyboardButton("ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧", url=f"https://t.me/XxlllllllllllllllllllllllllllxX"),
+                                InlineKeyboardButton("Abdo Asil...🤍", url=f"https://t.me/ttccss"),
                             ] 
                          ] 
                       ) 
